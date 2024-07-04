@@ -1,0 +1,20 @@
+#bodyContainer {
+    height: calc(100vh - 46px);
+    width : 100%;
+    background-color: rgb(193, 255, 193);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
+.bar {
+    width: 10px;
+    background-color: rgb(70, 193, 255);
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}

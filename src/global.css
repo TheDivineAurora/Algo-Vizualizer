@@ -1,0 +1,6 @@
+/* global.css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  }
