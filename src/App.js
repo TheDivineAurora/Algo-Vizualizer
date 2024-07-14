@@ -1,10 +1,11 @@
 import MainPage from "./components/MainPage";
+import { VisualizerProvider } from "./contexts/VisualizerContext";
 
 function App() {
   return (
-    <div>
+    <VisualizerProvider>
       <MainPage/>
-    </div>
+    </VisualizerProvider>
   );
 }
 

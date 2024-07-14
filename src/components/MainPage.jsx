@@ -5,7 +5,7 @@ import './MainPage.css'
 
 const MainPage = () => {
   return (
-    <div class = "mainContainer">
+    <div className = "mainContainer">
         <ToolBar/>
         <Body/>
     </div>
