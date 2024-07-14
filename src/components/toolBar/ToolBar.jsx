@@ -6,6 +6,7 @@ const ToolBar = () => {
   const { sortingState, startPlaying, changeSpeed, changeAlgorithm, updateBarCount } = useVisualizer();
   const [selectedSpeed, setSelectedSpeed] = useState("normal");
   const [inputBarCount, setInputBarCount] = useState(25);
+  const [selectedAlgorithm, setSelectedAlgorithm] = useState("bubble_sort");
 
   const handleSpeedChange = (value) => {
     setSelectedSpeed(value);
@@ -24,6 +25,7 @@ const ToolBar = () => {
   };
 
   const handleAlgorithmChange = (algorithm) => {
+    setSelectedAlgorithm(algorithm);
     changeAlgorithm(algorithm);
   };
 
@@ -35,12 +37,42 @@ const ToolBar = () => {
   return (
     <div id="toolBar" className="toolBarContainer">
       <div className="toolBarOptions">
-        <div className="toolBarItem" onClick={() => handleAlgorithmChange("bubble_sort")}>Bubble Sort</div>
-        <div className="toolBarItem" onClick={() => handleAlgorithmChange("merge_sort")}>Merge Sort</div>
-        <div className="toolBarItem" onClick={() => handleAlgorithmChange("quick_sort")}>Quick Sort</div>
-        <div className="toolBarItem" onClick={() => handleAlgorithmChange("selection_sort")}>Selection Sort</div>
-        <div className="toolBarItem" onClick={() => handleAlgorithmChange("insertion_sort")}>Insertion Sort</div>
-        <div className="toolBarItem" onClick={() => handleAlgorithmChange("radix_sort")}>Radix Sort</div>
+        <div
+          className={`toolBarItem ${selectedAlgorithm === "bubble_sort" ? "selectedAlgorithm" : ""}`}
+          onClick={() => handleAlgorithmChange("bubble_sort")}
+        >
+          Bubble Sort
+        </div>
+        <div
+          className={`toolBarItem ${selectedAlgorithm === "merge_sort" ? "selectedAlgorithm" : ""}`}
+          onClick={() => handleAlgorithmChange("merge_sort")}
+        >
+          Merge Sort
+        </div>
+        <div
+          className={`toolBarItem ${selectedAlgorithm === "quick_sort" ? "selectedAlgorithm" : ""}`}
+          onClick={() => handleAlgorithmChange("quick_sort")}
+        >
+          Quick Sort
+        </div>
+        <div
+          className={`toolBarItem ${selectedAlgorithm === "selection_sort" ? "selectedAlgorithm" : ""}`}
+          onClick={() => handleAlgorithmChange("selection_sort")}
+        >
+          Selection Sort
+        </div>
+        <div
+          className={`toolBarItem ${selectedAlgorithm === "insertion_sort" ? "selectedAlgorithm" : ""}`}
+          onClick={() => handleAlgorithmChange("insertion_sort")}
+        >
+          Insertion Sort
+        </div>
+        <div
+          className={`toolBarItem ${selectedAlgorithm === "radix_sort" ? "selectedAlgorithm" : ""}`}
+          onClick={() => handleAlgorithmChange("radix_sort")}
+        >
+          Radix Sort
+        </div>
       </div>
       <div className="toolBarControls">
         <div className="speedControl">

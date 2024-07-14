@@ -21,7 +21,11 @@
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
-  
+  .toolBarItem.selectedAlgorithm {
+    background-color: #2980b9; /* Darker color for selected algorithm */
+    outline: 2px solid #2980b9; /* Outline for selected algorithm */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Shadow for selected algorithm */
+  }
   .toolBarItem:hover {
     background-color: #2980b9;
   }
