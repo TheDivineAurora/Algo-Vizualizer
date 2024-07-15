@@ -1,6 +1,6 @@
 # Visualize Algo
 
-This project is a React-based web application that visualizes sorting algorithms. It provides an interactive and educational tool to help users understand how various sorting algorithms work. The project includes a responsive design to ensure a great user experience on both desktop and mobile devices.
+I built this React-based web application that visualizes sorting algorithms as i was always fascinated by how sorting algorithms work, and a visualization helps in detailed understanding for learners.
 
 ## Table of Contents
 
