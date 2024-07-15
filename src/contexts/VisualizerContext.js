@@ -3,7 +3,7 @@ import  { getRandomInt, getDigit, mostDigits, awaitTimeout } from "../lib/utils.
 const VisualizerContext = createContext();
 
 const speeds = {
-    "slow" : "50",
+    "slow" : "500",
     "normal" : "200",
     "fast" : "10"
 }
